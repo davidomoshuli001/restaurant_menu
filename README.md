@@ -1,2 +1,80 @@
 # restaurant_menu
-This is a final project for the Codedex.io Html course. I am continuous growing my knowledge with web development and data analytics.
+# This is a final project for the Codedex.io Html course. I am continuous growing my knowledge with web development and data analytics.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites</title>
+</head>
+<body>
+    <header>
+        <img id="header-img" src="header.jpg" alt="Restaurant Header Image">
+        <h1>Delicious Bites</h1>
+        <nav>
+            <h2><a href="#menu">Menu</a></h2>
+            <h2><a href="#order-form">Order Form</a></h2>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+
+            <article>
+                <img src="burger.jpg" alt="Juicy Burger">
+                <h3>Classic Burger</h3>
+                <p>A juicy grilled beef burger topped with fresh lettuce and tomato. <i>$9.99</i></p>
+            </article>
+
+            <article>
+                <img src="pasta.jpg" alt="Creamy Pasta">
+                <h3>Alfredo Pasta</h3>
+                <p>Creamy Alfredo pasta served with parmesan cheese and garlic. <i>$12.49</i></p>
+            </article>
+
+            <article>
+                <img src="salad.jpg" alt="Fresh Salad">
+                <h3>Garden Salad</h3>
+                <p>A refreshing mix of greens, cucumbers, and tomatoes with vinaigrette. <i>$7.50</i></p>
+            </article>
+        </section>
+
+        <section id="order-form">
+            <h2>Place Your Order</h2>
+            <form>
+                <h3>Menu Item Quantities</h3>
+
+                <label for="burger-qty">Classic Burger:</label>
+                <input type="number" id="burger-qty" name="burger-qty" min="0"><br>
+
+                <label for="pasta-qty">Alfredo Pasta:</label>
+                <input type="number" id="pasta-qty" name="pasta-qty" min="0"><br>
+
+                <label for="salad-qty">Garden Salad:</label>
+                <input type="number" id="salad-qty" name="salad-qty" min="0"><br>
+
+                <h3>Sides & Add-ons</h3>
+
+                <label>
+                    <input type="checkbox" name="addon-fries"> Add Fries
+                </label><br>
+
+                <label>
+                    <input type="checkbox" name="addon-drink"> Add Drink
+                </label><br>
+
+                <h3>Special Requests</h3>
+                <label for="special-requests">Notes:</label><br>
+                <textarea id="special-requests" name="special-requests" rows="4" cols="40"></textarea><br>
+
+                <input type="submit" value="Go To Checkout">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with love by David</p>
+    </footer>
+</body>
+</html>
